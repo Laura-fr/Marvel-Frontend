@@ -1,0 +1,9 @@
+img {
+  height: 53px;
+  width: 115px;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  border: black 2px solid;
+}
