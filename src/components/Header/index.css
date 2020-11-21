@@ -1,9 +1,34 @@
 img {
   height: 53px;
   width: 115px;
+  margin-left: 20px;
+  margin-right: 200px;
 }
 .header {
   width: 100%;
   height: 80px;
-  border: black 2px solid;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header button.login {
+  margin-right: 20px;
+  margin-left: 200px;
+  width: 110px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f00d18;
+  outline: none;
+  cursor: pointer;
+}
+
+.header button {
+  height: 45px;
+  color: white;
+  font-size: large;
+  border: none;
+  background-color: black;
+  outline: none;
+  cursor: pointer;
 }

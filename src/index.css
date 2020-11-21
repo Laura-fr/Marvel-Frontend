@@ -12,22 +12,45 @@ code {
     monospace;
 }
 
-/* CHARACTERS */
+/* CHARACTERS & COMICS */
 
-.character {
-  border: black 2px solid;
+.comicspage,
+.characterpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cry {
+  font-size: 80px;
+  display: flex;
+  border: black 4px solid;
+  justify-content: center;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #f00d18;
+}
 
-  margin-top: 30px;
+.character,
+.comics {
+  margin: 30px 150px;
   display: flex;
 
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.characterbox {
+.characterbox,
+.comicsbox {
   border: black 3px solid;
   width: 340px;
   height: 400px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+
+  align-items: center;
+  color: white;
 }
 .characterbox img {
   /* display: none; */
