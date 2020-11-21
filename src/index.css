@@ -29,3 +29,6 @@ code {
   width: 340px;
   height: 400px;
 }
+.characterbox img {
+  /* display: none; */
+}

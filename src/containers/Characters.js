@@ -27,18 +27,27 @@ const Characters = () => {
       <h2>DISCOVER OUR CHARACTERS</h2>
       <div className="character">
         {data.results.map((results, index) => {
+          //   const keys = Object.keys(results);
+          //   console.log(keys);
           return (
             <div className="characterbox" key={index}>
               <h3>{results.name}</h3>
-              {/* <img
-              alt={results.thumbnail.path}
-              src={(results.thumbnail[keys[0]], results.thumbnail[keys[1]])}
-            /> */}
+              {/* <img alt={keys} src={keys} /> */}
               <span>{results.description}</span>
             </div>
           );
         })}
       </div>
+      {/* <div>
+        {data.results.thumbnail.map((thumbnail, index) => {
+          const keys = Object.keys(thumbnail);
+          return (
+            <div>
+              <img alt={keys} src={keys} />
+            </div>
+          );
+        })}
+      </div> */}
     </div>
   );
 };
