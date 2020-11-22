@@ -30,6 +30,7 @@ const Charactersresume = () => {
   ) : (
     <div className="charactersresume">
       <p>CHARACTER RESUME</p>
+      <h3>{data.results.name}</h3>
     </div>
   );
 };
