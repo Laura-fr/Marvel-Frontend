@@ -52,6 +52,8 @@ code {
   align-items: center;
   color: white;
 }
+
 .characterbox img {
-  /* display: none; */
+  height: 260px;
+  width: 230px;
 }

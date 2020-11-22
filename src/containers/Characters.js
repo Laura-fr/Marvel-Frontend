@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Characters = () => {
@@ -32,8 +33,11 @@ const Characters = () => {
           return (
             <div className="characterbox" key={index}>
               <h3>{results.name}</h3>
-              <div className="cry">🦸</div>
-              {/* <img alt={keys} src={keys} /> */}
+              <Link to={`/characters/${results.id}`}></Link>
+              <img
+                alt={results.name}
+                src={results.thumbnail.path + "." + results.thumbnail.extension}
+              />
               <span>{results.description}</span>
             </div>
           );
