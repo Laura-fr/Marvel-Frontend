@@ -15,12 +15,13 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/characters">
-            <Characters />
-          </Route>
           <Route path="/characters/:id">
             <Charactersresume />
           </Route>
+          <Route path="/characters">
+            <Characters />
+          </Route>
+
           <Route path="/comics">
             <Comics />
           </Route>

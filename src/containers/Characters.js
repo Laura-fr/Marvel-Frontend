@@ -28,31 +28,22 @@ const Characters = () => {
       <h2>DISCOVER OUR CHARACTERS</h2>
       <div className="character">
         {data.results.map((results, index) => {
-          //   const keys = Object.keys(results);
-          //   console.log(keys);
           return (
             <div className="characterbox" key={index}>
               <h3>{results.name}</h3>
-              <Link to={`/characters/${results.id}`}></Link>
-              <img
-                alt={results.name}
-                src={results.thumbnail.path + "." + results.thumbnail.extension}
-              />
+              <Link to={`/characters/${results.id}`}>
+                <img
+                  alt={results.name}
+                  src={
+                    results.thumbnail.path + "." + results.thumbnail.extension
+                  }
+                />
+              </Link>
               <span>{results.description}</span>
             </div>
           );
         })}
       </div>
-      {/* <div>
-        {data.results.thumbnail.map((thumbnail, index) => {
-          const keys = Object.keys(thumbnail);
-          return (
-            <div>
-              <img alt={keys} src={keys} />
-            </div>
-          );
-        })}
-      </div> */}
     </div>
   );
 };

@@ -27,28 +27,19 @@ const Comics = () => {
       <h2>DISCOVER OUR COMICS</h2>
       <div className="comics">
         {data.results.map((results, index) => {
-          //   const keys = Object.keys(results);
-          //   console.log(keys);
           return (
             <div className="comicsbox" key={index}>
               <h3>{results.title}</h3>
-              <div className="cry">📚</div>
-              {/* <img alt={keys} src={keys} /> */}
+
+              <img
+                alt={results.title}
+                src={results.thumbnail.path + "." + results.thumbnail.extension}
+              />
               <span>{results.description}</span>
             </div>
           );
         })}
       </div>
-      {/* <div>
-          {data.results.thumbnail.map((thumbnail, index) => {
-            const keys = Object.keys(thumbnail);
-            return (
-              <div>
-                <img alt={keys} src={keys} />
-              </div>
-            );
-          })}
-        </div> */}
     </div>
   );
 };

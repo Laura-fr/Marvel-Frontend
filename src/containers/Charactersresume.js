@@ -29,10 +29,9 @@ const Charactersresume = () => {
     <span>En cours de chargement...</span>
   ) : (
     <div className="charactersresume">
-      <h2>{data.results.name}</h2>
+      <p>CHARACTER RESUME</p>
     </div>
   );
 };
 
 export default Charactersresume;
-// `https://marvel-backend-20.herokuapp.com/characters/${id}`
